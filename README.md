@@ -16,6 +16,7 @@ I use PaperMC as server, and recommend Prismlauncher as client, to install simpl
 - Vanilla tweaks datapacks:
   - graves
 - EssentialsX to provide more fine grained over permissions. For instance, you can give a player permission to the /gamemode command specifically for spectator mode only, and not for creative mode
+  - EssentialsXDiscord, to exchange messages (including commands) between my discord server and the minecraft server
 ## Client side
 - Simple voice chat (both server side and client side are necessary)
 - MiniHUD. You can use h+c to open the menu where you select what info to show, like time of the day or the horizontal and vertical angle you're looking at
@@ -52,4 +53,8 @@ I use PaperMC as server, and recommend Prismlauncher as client, to install simpl
     - ```
       /lp user <player> permission set bukkit.command.gospectator true
       /lp user <player> permission set minecraft.command.gamemode false  # gamemode is too powerful, they can change the mode even of other players
-    
+## EssencialsXDiscord config
+- set up the server and the plugin following this guide: https://essentialsx.net/wiki/Discord.html
+  - the guide works but there was an error when creating the bot, it couldn't be saved as private until I changed the link type in the Installation tab to None
+  - I use a broadcast channel, added to the channels section in the EssentialsXDiscord config.yml. Then I give all users read access to it with /lp group default permission set essentials.discord.read.broadcast true. An essentials restart was neccessary with /essentials reload
+  - I use the primary channel to receive all event messages and the provided console channel to relay all console messages to
