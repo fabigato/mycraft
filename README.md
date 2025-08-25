@@ -15,6 +15,7 @@ I use PaperMC as server, and recommend Prismlauncher as client, to install simpl
 - Simple voice chat. Needs voice over IP port open (forwarded) in the router
 - Vanilla tweaks datapacks:
   - graves
+- EssentialsX to provide more fine grained over permissions. For instance, you can give a player permission to the /gamemode command specifically for spectator mode only, and not for creative mode
 ## Client side
 - Simple voice chat (both server side and client side are necessary)
 - MiniHUD. You can use h+c to open the menu where you select what info to show, like time of the day or the horizontal and vertical angle you're looking at
